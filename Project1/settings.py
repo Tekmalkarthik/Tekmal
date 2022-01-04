@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    "DATA_app",
 ]
 
 MIDDLEWARE = [
@@ -54,7 +55,7 @@ ROOT_URLCONF = 'Project1.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ['Template'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -76,10 +77,11 @@ WSGI_APPLICATION = 'Project1.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-         'HOST' : '127.0.0.1',
-        'NAME':  'Local instance',
-        'USER':'ROOT',
-        'port':'3306',
+        'HOST' : 'localhost',
+        'NAME':  'sagsol',
+        'USER':'root',
+        'PASSWORD':'karthik@2906',
+        'PORT':'3306',
         
     }
 }
