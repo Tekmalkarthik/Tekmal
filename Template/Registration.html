@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+  
+  .container{
+      width:100%;
+      padding:0px 3px ;}
+
+
+      header{
+        padding:30px;
+        font-style:Times New Roman ;
+      margin-top: 0%;
+      
+    }   
+    
+    
+
+    label{
+        color:white;
+        font-size: 18px;
+
+    }
+
+
+    input{
+        padding:5px
+    }
+
+    select{
+        padding:5px;
+    }
+ 
+      body{
+        text-align: center;
+        padding:0px 5px;
+        background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIyf7dnM0fS4AxxBRjIqXXqhCgg4zs5hdlvQ&usqp=CAU);
+        background-repeat: no-repeat;
+        background-size: 1600px;
+        color:white,
+    }
+     
+    .form-group {
+        margin:2rem 0rem
+    
+       
+    }
+    .col-md-2{
+        display:inline
+        }
+
+    .col-3{
+        padding:0rem 2rem 0rem 0rem;
+        display:inline;
+       padding-left: 2.9rem;
+    }
+    .col-3 input{
+        margin:0rem 0rem 0rem 0rem;
+    }
+   
+   .form-groups .col-3  {
+
+    padding-right: 15.9rem;
+}
+
+
+      
+  #Address.form-group{
+        padding-left:14rem;
+     }
+
+      
+     #upload.form-group{
+        padding-right:2rem;
+     }
+
+
+     button{
+         padding:5px;
+         width:15%;
+         background-color:#609ebe ;
+         color:white;
+     }
+
+     #contact .col-3{
+         padding-right:4rem
+     }
+
+
+
+     footer{ 
+    
+      background-color: blueviolet;
+    text-align : center;
+    width : 100%;
+    font-family: solid;
+    position: fixed;
+    bottom:0px;} 
+
+
+    </style>
+</head>
+<body>
+ <div class='container'>
+ <form  method="POST"  action="login"> 
+ <header>
+      <h2>SAGSOL APPLICATION FORM</h2>
+    </header><hr>
+    
+<section class="form-group"> 
+        <label>Name:</label>
+  
+<div class='col-md-2'>
+        <input type="text"  NAME="" class="box" size=25 placeholder="Enter FirstName">
+        <input type="text" NAME="LastName" class="box" size=25 placeholder="Enter LastName">
+    </div>
+ 
+</section> 
+
+<section class="form-group">
+     <label>Email:</label>
+    
+    <div class='col-md-2'>
+    <input type="email" class="box" NAME="Email" size=55 placeholder="Enter Email_ID">
+    </div>
+</section>
+
+
+<section class='form-group'>
+   <label>Gender:</label>
+
+   <div class='col-3'>
+    <input type="radio" NAME='Gender' value="" >Male</input>
+   </div>
+
+   <div class='col-3'>
+    <input type="radio" NAME="Gender" value="" >Female</input>
+    </div>
+
+    <div class='col-3'>
+    <input type="radio" NAME="Gender" value="">Other</input>
+    </div>
+
+</section>
+
+
+
+
+<section class='form-group'>
+    <label> WORK STATUS:</label>
+ 
+    <div class='col-3'>
+        
+     <input type="radio" NAME='WORK' value=""> STUDENT</input>
+    </div>
+ 
+    <div class='col-3'>
+     <input type="radio" NAME="WORK" value="" >EMPLOYEE</input>
+     </div>
+ 
+
+ </section>
+
+<section class="form-groups" id='dob'>
+   <div class="col-3" >
+   <label>Date Of Birth:</label>
+
+    <input type="date" NAME="DOB" >
+</div>
+</section>    
+   
+
+
+<section class='form-group' id=Address>
+     <label>Address:</label>
+    
+    <label >Country: </label>
+    <select >
+    <option>INDIA</option>
+    <option>UNITED STATE AMERICA</option>
+    <option>CANADA</option>
+    <option>AUSTRALIA</option>
+    <option>ENGLAND</option>
+    <option>SOUTH AFRICA</option>
+    <option>PAKISTAN</option>
+   </select>
+
+
+
+
+    <label >State: </label>
+  
+    <select >
+    <option>TELANGANA</option>  
+    <option>MADHYA PRADESH</option>
+    <option>UTTAR PARDESH</option>
+    <option>TAMILNADU</option>
+    <option>KARNATAKA</option>
+    <option>ANDHRA PRADESH</option>
+    <option>MAHARASTRA</option>
+  </select>
+
+
+
+ 
+    <label >District: </label>
+  
+    <select 
+      <option>ADILABAD</option>
+      <option>HYDERABAD</option>
+      <option>MOINABAD</option>
+      <option>R.REDDY</option>
+      <option>WANAPARTY</option>
+      <option>SANGA REDDY</option>
+      <option>MEDCHAL</option>
+    </select>
+    
+</section>
+
+<section class='form-group' id=contact>
+   <label>Contact:</label>
+   <div class="col-3" >
+    <select >
+      <option>+91</option>
+      <option>+00</option>
+      <option>+01</option>
+      <option>+62</option>
+      <option>+02</option>
+    </select>
+    <input type="number" class="box" NAME="Contact" size=25 placeholder="Enter number">
+</div>
+</section>
+
+
+
+
+
+
+<section class='form-group' id=upload>
+<label>Upload photo:</label>
+<div class='col-3'>
+    <input type="file" name="uploading" value="jpg">
+</div>   
+</section>
+
+
+
+<button type="submit"  class='bg'>submit</button>
+
+
+
+<footer>
+    SAGSOL_PVT_LMTD
+  </footer>
+
+
+</form> 
+</div>
+</body>
+</html>
